@@ -21,7 +21,7 @@ notion = NotionClient(auth=NOTION_TOKEN)
 @app.route("/")
 def home():
     return f'''
-    <a href="https://slack.com/oauth/v2/authorize?client_id={CLIENT_ID}&scope=users.profile:read,users.profile:write&user_scope=users.profile:read,users.profile:write&redirect_uri={REDIRECT_URI}">
+    <a href="https://slack.com/oauth/v2/authorize?client_id={CLIENT_ID}&scope=&user_scope=users.profile:read,users.profile:write&redirect_uri={REDIRECT_URI}">
         Connect your Slack
     </a>
     '''
